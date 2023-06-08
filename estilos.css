@@ -1,0 +1,286 @@
+body{
+  margin-left: 5%;
+  width: 75%;
+  background-color: #123;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  
+}
+header{
+  margin-right: 25%;
+  margin-left: 25%;
+  justify-content: center;
+ align-items: center;
+}
+header a img {
+  max-width: 100%;
+  height: auto;
+}
+.portada{
+  height: 180px;
+  width: 840px;
+  border-radius: 10px;
+}
+.texto{
+  margin-left: 27%;
+  font-size: 27px;
+}
+
+/*LATERAL*/
+aside{
+float: right;
+margin-right: -25%;
+margin-top: -40%;
+
+}
+aside > img{
+border-radius: 15px;
+}
+
+/* MENÚ */
+.navegacion{
+  width: 920px;
+  background-color: #007dfa;
+  border-radius: 15px;
+  margin-left: 24%;
+}
+
+.navegacion ul{
+  list-style: none;
+  border-radius: 15px;
+  
+}
+
+.navegacion li{
+    flex-grow: 1;
+    justify-content: center;
+    font-size: 27px;
+}
+
+.menu > li{
+  position: relative;
+  display: inline-block;
+  padding: 2px;
+}
+
+.menu > li > a{
+  display: block;
+  padding: 15px 80px;
+  font-family: 'Dancing Script', cursive;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu li a:hover{
+  background-color: #336eaa;
+  border-radius: 15px;
+  transition:all .3s;
+}
+
+/*SUBMENU*/
+
+.submenu{
+  position: absolute;
+  background-color: #007dfa;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .7s;
+ 
+}
+.submenu li{
+  padding: 1px;
+  
+}
+
+.submenu li a{
+  display: block;
+  padding: 15px;
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+  text-decoration: none;
+}
+
+.menu li:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/*PÁGINA DE TARTAS DE PANES*/
+.titulo1{
+margin-left: 50%;
+}
+
+
+.container {
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px; 
+  column-gap: 10px;
+  row-gap: 15px;
+  margin-left: 22%;
+  display: flex;
+}
+
+hr{
+  visibility: hidden;
+}
+
+.boda1{
+  border-radius: 10px;
+  box-shadow: 7px 5px 5px rgb(65, 62, 62);
+}
+
+/*SEGUNDA FILA DE PANES*/
+.container2 {
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px; 
+  column-gap: 10px;
+  row-gap: 15px;
+  margin-left: 22%;
+  display: flex;
+}
+/*TERCERA FILA DE PANES*/
+.container3 {
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px; 
+  column-gap: 10px;
+  row-gap: 15px;
+  margin-left: 22%;
+  display: flex;
+}
+
+/*FOOTER*/
+.footer{
+  margin-top: 17%;
+  margin-left: 24%;
+  margin-right: -5%;
+  background: #007dfa;
+  list-style: none;
+  line-height: 150%;
+  padding: 0 20px;
+  display: flex;
+  border-radius: 8px;
+  margin-bottom: 3px;
+    
+}
+.social{
+  margin-left: 10%;
+  margin-top: 1%;
+  display: flex;
+}
+
+/*Formulario de Reservas-- AVISO MUCHO TEXTO*/
+
+
+
+
+form {
+max-width: 300px;
+margin: 10px auto;
+margin-left: 40%;
+padding: 10px 20px;
+background: #f4f7f8;
+border-radius: 8px;
+color: #403e41;
+font-size: 20px;
+}
+
+.registro {
+margin: 0 0 30px 0;
+text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+background: rgba(255,255,255,0.1);
+border: none;
+font-size: 16px;
+height: auto;
+margin: 0;
+outline: 0;
+padding: 15px;
+width: 100%;
+background-color: #e8eeef;
+color: #8a97a0;
+box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+margin: 0 4px 8px 0;
+}
+
+select {
+padding: 6px;
+height: 32px;
+border-radius: 2px;
+}
+
+button {
+padding: 19px 39px 18px 39px;
+color: #FFF;
+background-color: #123;
+font-size: 18px;
+text-align: center;
+font-style: normal;
+border-radius: 5px;
+width: 100%;
+border: 1px solid #123;
+border-width: 1px 1px 3px;
+box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+margin-bottom: 10px;
+}
+
+fieldset {
+margin-bottom: 30px;
+border: none;
+}
+
+legend {
+font-size: 1.4em;
+margin-bottom: 10px;
+}
+
+label {
+display: block;
+margin-bottom: 8px;
+}
+
+label.light {
+font-weight: 300;
+display: inline;
+}
+
+.number {
+background-color: #123;
+color: #fff;
+height: 30px;
+width: 30px;
+display: inline-block;
+font-size: 0.8em;
+margin-right: 4px;
+line-height: 30px;
+text-align: center;
+text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+form {
+  max-width: 480px;
+}
+
+}
